@@ -1,8 +1,12 @@
+# problem 0:
+SELECT * FROM Students;
+
+# Basic queries
 SELECT Name FROM Students;
 SELECT * FROM Students WHERE Age > 30;
 SELECT Name FROM Students WHERE Gender='F' AND Age=30;
 SELECT Points FROM Students WHERE Name='Alex';
-INSERT INTO Students VALUES(10, 'Nabigha', '24', 'F', 500);
+INSERT INTO Students VALUES(147, 'Carolina', '22', 'F', 500);
 UPDATE Students SET Points = 500 WHERE Name='Basma';
 UPDATE Students SET Points = 100 WHERE Name='Alex';
 
@@ -28,3 +32,4 @@ select AVG(points) from students;
 select COUNT(Name) from students where points=500;
 select Name from students WHERE Name GLOB '*s*';
 select name from students ORDER BY points DESC;
+
