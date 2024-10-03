@@ -29,6 +29,7 @@ SELECT employees.name, employees.Company, companies.date FROM employees Inner jo
 SELECT employees.name FROM employees Inner join companies ON employees.Company=companies.name and companies.Date < 2000;
 SELECT companies.name FROM companies Inner join employees ON employees.Company=companies.name and employees.Role='Graphic Designer';
 
+# Count & Filter
 select name from students where points=(SELECT MAX(points) from students);
 select AVG(points) from students;
 select COUNT(Name) from students where points=500;
